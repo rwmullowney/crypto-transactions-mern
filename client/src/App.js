@@ -1,12 +1,15 @@
-import React from "react";
-import Books from "./pages/Books";
-import Nav from "./components/Nav";
+import React, { Component } from 'react';
+import './App.css';
+import Header from './components/Header';
 
-const App = () => (
-  <div>
-    <Nav />
-    <Books />
-  </div>
-);
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+      </div>
+    );
+  }
+}
 
 export default App;
