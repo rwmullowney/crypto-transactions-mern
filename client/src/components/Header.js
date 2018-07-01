@@ -27,6 +27,7 @@ export default class Header extends Component {
   // Runs the API query upon page load
   componentDidMount() {
     this.cryptoAPI();
+    this.loadUsers();
   };
 
   // grabDB(req, res){
@@ -34,6 +35,7 @@ export default class Header extends Component {
   //   .then(dbModel => res.json(dbModel))
   // }
 
+  // Grab the user list from the database
   loadUsers = () => {
     API.getUsers()
     .then(res => console.log(res))
