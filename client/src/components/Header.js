@@ -38,7 +38,9 @@ export default class Header extends Component {
   // Grab the user list from the database
   loadUsers = () => {
     API.getUsers()
-    .then(res => console.log(res))
+    .then(res => 
+      {console.log(res)}
+    )
     .catch(err => console.log(err));
   };
 

@@ -1,12 +1,9 @@
 const db = require("../models");
 
-// Defining methods for the booksController
+// Defining methods for the usersController
 module.exports = {
   findAll: function (req, res) {
-
-    console.log("===============");
-    console.log("Request:");
-    console.log(req);
+    
 
     db.User
       .find({})
@@ -20,12 +17,12 @@ module.exports = {
   //     .then(dbModel => res.json(dbModel))
   //     .catch(err => res.status(422).json(err));
   // },
-  create: function (req, res) {
-    db.User
-      .create(req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  }
+  // create: function (req, res) {
+  //   db.User
+  //     .create(req.body)
+  //     .then(dbModel => res.json(dbModel))
+  //     .catch(err => res.status(422).json(err));
+  // }
   // update: function(req, res) {
   //   db.Book
   //     .findOneAndUpdate({ _id: req.params.id }, req.body)
